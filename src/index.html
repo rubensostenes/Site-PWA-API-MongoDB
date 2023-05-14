@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="theme-color" content="#000000">
+  <link rel="apple-touch-icon" sizes="192x192" href="icones/android-launchericon-192-192.png" media="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PEDIDO DE ORAÇÃO</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="icones/ieadpe.jpg" type="image/x-icon">
+  <link rel="manifest" href="manifest.json">
+  
+</head>
+<body>
+  <div class="entrada-box">
+
+
+
+    <h1>Pedido de Oração</h1>
+
+    <form id="meuFormulario" >
+      <div class="textbox">
+        <input type="text" placeholder="Nome"  id="name" required>
+      </div>
+
+      <div class="textbox">
+        <input type="text" placeholder="Pedido"  id="pedido" required>
+      </div>
+
+      <input class="btn" type="submit"  value="Enviar">
+
+      <a href="secundaria.html">
+        <input class="btn2" type="button" onclick="searchPedidos()" value="Pedidos">
+      </a>
+
+    </form>
+  </div>
+  
+  
+  <script src="script.js"></script>
+  <script type="module">
+    import 'https://cdn.jsdelivr.net/npm/@pwabuilder/pwaupdate';
+    const el = document.createElement('pwa-update');
+    document.body.appendChild(el);
+  </script>
+</body>
+</html>
