@@ -36,7 +36,7 @@ form.addEventListener('submit', (event) => {
 function searchPedidos() {
 
   const tabela = document.getElementById('minha-tabela');
-  const tbody = tabela.querySelector('tbody');
+
 
   // faz a requisição HTTP à API e processa os dados recebidos
   fetch('http://127.0.0.1:3000/pedido/')
